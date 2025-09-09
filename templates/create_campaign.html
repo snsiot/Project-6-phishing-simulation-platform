@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Create Campaign</title>
+</head>
+<body>
+    <h1>Create Phishing Campaign</h1>
+    <form method="POST" action="/create_campaign">
+        <label>Campaign Name:</label><br>
+        <input type="text" name="name" required /><br><br>
+
+        <label>Phishing Email Template (use {{link}} for phishing URL):</label><br>
+        <textarea name="template" rows="6" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Create Campaign" />
+    </form>
+</body>
+</html>
